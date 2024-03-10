@@ -54,7 +54,7 @@ sed -i 's/255.255.255.0/255.255.255.0/g' package/base-files/files/bin/config_gen
 # # svn export https://github.com/kiddin9/openwrt-packages/trunk/mosdns package/mosdns
 # # svn export https://github.com/kiddin9/openwrt-packages/trunk/v2dat package/v2dat
 
-echo "
+# echo "
 # # 额外组件
 # CONFIG_GRUB_IMAGES=y
 # CONFIG_VMDK_IMAGES=y
@@ -79,7 +79,7 @@ echo "
 # CONFIG_PACKAGE_rclone=y
 # CONFIG_PACKAGE_fuse3-utils=y
 
-" >> .config
+# " >> .config
 
 # 移除 ddns 和 ddnsto
 # sed -i 's/CONFIG_PACKAGE_ddns-scripts=y/CONFIG_PACKAGE_ddns-scripts=n/' .config
